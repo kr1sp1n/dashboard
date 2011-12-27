@@ -1,0 +1,103 @@
+.old-task {
+display: block;
+width: 5em;
+height: 5em;
+background: #ccc;
+padding: 1em;
+margin: 1em;
+float: left;
+}
+
+.page-header {
+position: relative;
+}
+
+#status {
+position: absolute;
+top: 10px;
+right: 180px;
+}
+
+#qr_code {
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+.qrcode {
+	border: 1px solid #ccc;
+}
+
+/* Override some defaults */      
+html, body {
+background-color: #eee;
+}
+.container > footer p {
+text-align: center; /* center align it with the container */
+}
+.container {
+width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+}
+
+/* The white background content wrapper */
+.content {
+background-color: #fff;
+padding: 20px;
+margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */        -webkit-border-radius: 0 0 6px 6px;
+-moz-border-radius: 0 0 6px 6px;
+border-radius: 0 0 6px 6px;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
+/* Page header tweaks */      .page-header {
+background-color: #f5f5f5;
+padding: 20px 20px 10px;
+margin: -20px -20px 20px;
+}
+/* Styles you shouldn't keep as they are for displaying this base example only */      .content .span10,      .content .span4 {
+min-height: 500px;
+}
+/* Give a quick and non-cross-browser friendly divider */      .content .span4 {
+margin-left: 0;
+padding-left: 19px;
+border-left: 1px solid #eee;
+}
+
+/* POST-IT NOTES */
+
+#tasks li {
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 25px 25px;
+    padding: 15px;
+    background: #f1f3a2;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(247,247,210,1)), to(rgba(240,242,155,1)));
+    background: -moz-linear-gradient(top, rgba(247,247,210,1), rgba(240,242,155,1));
+    -webkit-box-shadow: 0 2px 12px rgba(0,0,0,.5);
+    -moz-box-shadow: 0 2px 12px (rgba(0,0,0.5));
+    box-shadow: 0 1px 2px #000;
+    -webkit-transform: rotate(-.5deg);
+    -moz-transform: rotate(-.5deg);
+    -o-transform: rotate(-.5deg);
+}
+
+#tasks li:nth-child(even) {
+    -webkit-transform: rotate(.5deg);
+    -moz-transform: rotate(.5deg);
+    -o-transform: rotate(.5deg);
+}
+
+#tasks li p {
+    text-align: center;
+    font: normal normal normal 18px/22px 'Helvetica Neue', Arial, sans-serif; /*'Reenie Beanie'*/
+    color: #000;
+    text-shadow: white 1px 1px 0px;
+    overflow:hidden;
+}
+
+
+
